@@ -2,20 +2,53 @@ package com.kita.second.level1;
 
 public class Phone {
 	// 필드(속성)
-	String phoneName;
-	String owner;
-	String color;
-	int memory;
-	String phoneNumber;
+	private String phoneName;
+	private String owner;
+	private String color;
+	private int memory;
+	private String phoneNumber;
 	
-	// 생성자
-	// 생성자가 정의도지 않았을 때만 || 컴파일러가 기본 생성자 넣어줌
-	public Phone() {
-//		super();
+	void setColor(String color) {
+		this.color = color;
+	}
+	void setMemory(int memory) {
+		this.memory = memory;
 	}
 	
+	String getColor() {
+		return color;
+	}
+	
+	int getMemory() {
+		return memory;
+	}
+	
+	void setOwner(String owner) {
+		this.owner = owner;
+	}
+	
+	String getOwner() {
+		return owner;
+	}
+	
+	// 생성자
+	// 생성자가 정의되지 않았을 때만 || 컴파일러가 기본 생성자 넣어줌
+	public Phone() {}
+	
 	public Phone(String phoneName, String color, int memory) {
+//		phoneName = name;
 		this.phoneName = phoneName;
+		this.color = color;
+		this.memory = memory;
+	}
+	
+	// Phone의 모든 필드에 초기값을 넣어주는 생성자 만들기
+	public Phone(String phoneName, String owner, String color, int memory, String phoneNumber) {
+		this.phoneName = phoneName;
+		this.owner = owner;
+		this.color = color;
+		this.memory = memory;
+		this.phoneNumber = phoneNumber;
 	}
 	
 	// 메소드(동작)
@@ -33,4 +66,28 @@ public class Phone {
 	
 	
 //	리턴타입 메소드명(매개변수) {}
+
 }
+
+class Computer {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
