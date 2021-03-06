@@ -10,7 +10,7 @@ public class Game {
 		
 //		do { 실행코드 } while(boolean값);
 		do {
-			myBall.setNumbers();
+			MyBall.setNumbers();
 		} while(Checker.check(gameCnt, ball, myball));
 		
 		System.out.println("야구게임  종료!");
