@@ -3,10 +3,12 @@ package com.kita.second.level2;
 public class Dog extends Animal {	
 	boolean cutiness;
 	
-	public Dog(String name, int age) {
+	public Dog(String name) {
 		super(name); // Animal(name);
 //		super.age = 1;
 		this.cutiness = true;
+//		super.type = "";
+//		super.method();
 	}
 	
 	// Overriding
@@ -15,7 +17,7 @@ public class Dog extends Animal {
 		System.out.println("개가 운다.");
 	}
 	
-	void barking() {
+	void bark() {
 		System.out.println("개가 짖는다.");
 	}
 }
