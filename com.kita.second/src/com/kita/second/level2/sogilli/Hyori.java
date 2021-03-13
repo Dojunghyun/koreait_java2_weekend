@@ -11,6 +11,7 @@ public class Hyori {
 	int follower;
 	private boolean star = true;
 	
+	
 	// 생성자
 	public Hyori(String music) {
 		this.music = music;
