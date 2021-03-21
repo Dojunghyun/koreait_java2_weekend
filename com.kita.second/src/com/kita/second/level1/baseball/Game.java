@@ -1,18 +1,17 @@
 package com.kita.second.level1.baseball;
-
+// github.com/black-phantom2020
 public class Game {
 	// 실제 게임 실행하는 실행 클래스
 	public static void main(String[] args) {
 		int gameCnt = 3;
 		Baseball ball = new Baseball(gameCnt);
-		MyBall myball = new MyBall(gameCnt);
-		
+		MyBall myBall = new MyBall(gameCnt);
 		
 //		do { 실행코드 } while(boolean값);
 		do {
-			MyBall.setNumbers();
-		} while(Checker.check(gameCnt, ball, myball));
+			myBall.setNumbers();
+		} while(Checker.check(gameCnt, ball, myBall));
 		
-		System.out.println("야구게임  종료!");
+		System.out.println("야구게임 종료!");
 	}
 }
